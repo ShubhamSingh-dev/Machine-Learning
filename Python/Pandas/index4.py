@@ -22,3 +22,7 @@ print(random_df.isnull().sum())
 
 # counting the values based on the labels
 print(diabetes_df.value_counts('Outcome')) # Outcome is the column name
+
+# Group the values based on the mean 
+print(diabetes_df.groupby('Outcome').mean())
+
